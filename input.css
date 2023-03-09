@@ -2,11 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    overscroll-behavior: none;
+}
+
+@layer base {
+    h1 {
+        @apply font-montreal text-[50px] leading-none;
+    }
+    h2 {
+        @apply font-montreal text-[50px] leading-none font-medium;
+    }
+    h3 {
+        @apply font-montreal text-[35px] leading-none font-medium;
+    }
+    h4 {
+        @apply font-montreal text-[25px] leading-[1.1] font-medium;
+    }
+    h5 {
+        @apply font-montreal text-xl leading-[1.36] font-medium;
+    }
+}
+
+@media (max-width: 1387.98px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.btn-primary {
+    @apply flex justify-between items-center bg-blue w-full text-base font-semibold leading-tight py-[19px] px-6 rounded-[50px] overflow-hidden;
+}
+
+.form-control {
+    @apply w-full bg-transparent font-montreal text-[15px] leading-none font-medium text-white focus:outline-none py-5;
+}
+
 /* HAMBURGER MENU */
 .hamburger {
     cursor: pointer;
-    width: 24px;
-    height: 24px;
+    width: 43px;
+    height: 30px;
     transition: all 0.25s;
     position: relative;
 }
@@ -16,30 +61,27 @@
 .hamburger-bottom {
     content: '';
     position: absolute;
-    width: 24px;
-    height: 3px;
+    width: 43px;
+    height: 5px;
     top: 0;
     left: 0;
-    background: #000;
+    background: #fff;
     transform: rotate(0);
     transition: all 0.5s;
 }
 
 .hamburger-middle {
-    transform: translateY(7px);
+    transform: translateY(12px);
 }
 
 .hamburger-bottom {
-    transform: translateY(14px);
-    background: #000;
+    transform: translateY(24px);
+    background: #fff;
 }
 
-.open {
+.hamburger.open {
     transform: rotate(90deg);
     transform: translateY(0px);
-    position: fixed;
-    top: 50px;
-    right: 25px;
 }
 
 .open .hamburger-top {
@@ -54,4 +96,28 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: #fff;
+}
+
+.header-menu {
+    transform: translateY(-100%);
+    /* transition: all 0.2s ease-in-out; */
+}
+.header-menu.open {
+    transform: translateY(0);
+}
+
+.menu-item {
+    @apply relative font-montreal text-[30px] leading-normal font-bold sm:text-[36px] md:text-[42px] lg:text-[50px] xl:text-[60px];
+}
+
+.menu-item img {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    right: -16px;
+    max-width: 112%;
+}
+
+.menu-item.active img {
+    display: block;
 }

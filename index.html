@@ -4,13 +4,1235 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.default.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Hack Project</title>
     </head>
     <body>
-        <h1 class="text-4xl text-red-500">Hello</h1>
-        <h3 class="text-3xl text-blue-800">Hi there</h3>
-        <div class="bg-red w-full h-52"></div>
+        <!-- ============= Header Start ================== -->
+        <header class="relative overflow-hidden">
+            <div class="container flex justify-between items-center pl-5 pr-[30px] pt-1 md:pt-0">
+                <a href="#" class="relative max-w-[199px] z-30 md:max-w-none">
+                    <img src="./assets/icons/logo.svg" alt="Logo" />
+                </a>
+
+                <button type="button" class="relative hamburger z-30">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- -------- Menu Start -------- -->
+            <nav
+                class="header-menu absolute left-0 top-0 w-full min-h-[400px] bg-menu-bg bg-cover py-20 z-20 lg:py-[100px]"
+            >
+                <ul
+                    class="container flex flex-col items-end space-y-2.5 pr-8 sm:pr-20 md:pr-[100px] lg:pr-[114px]"
+                >
+                    <li class="menu-item active">
+                        <a href="#">Home</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#who-we-are">Who We Are</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#services">Services</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#suit-commerce">SuiteCommerce</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tools">Tools we Use</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tech-stack">Our Tech Stack</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#testimonials">Testimonials</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact">Let's Talk</a>
+                        <img src="./assets/icons/menu-active.svg" alt="icon" />
+                    </li>
+                </ul>
+            </nav>
+            <!-- -------- Menu End -------- -->
+
+            <!-- ---- Hero Section Start ----- -->
+            <div
+                class="container flex flex-col-reverse px-0 sm:pt-[95px] lg:flex-row lg:items-center lg:pt-1 lg:pb-7"
+            >
+                <div
+                    class="flex flex-col items-center text-center px-[30px] lg:items-start lg:text-left lg:w-1/2 lg:pr-0"
+                >
+                    <h1 class="mb-5">Empowering Businesses to run better with NetSuite</h1>
+                    <p class="mb-6">
+                        Suspendisse eu dolor sodales, bibendum nisi et, suscipit purus. Donec
+                        egestas hendrerit placerat. Cras feugiat felis massa, ut dapibus elit
+                        vestibulum quis.
+                    </p>
+                    <a href="#" class="group btn-primary max-w-[308px] lg:max-w-[188px]">
+                        <span
+                            class="transition duration-200 out-expo group-hover:-translate-x-[200%]"
+                            >Get in touch</span
+                        >
+                        <img
+                            src="./assets/icons/arrow-right.svg"
+                            class="transition duration-200 in-expo group-hover:-translate-x-[300%] md:max-w-[16px]"
+                            alt="icon"
+                        />
+                    </a>
+                </div>
+                <div class="sm:hidden lg:flex lg:w-1/2">
+                    <img
+                        src="./assets/images/hero.png"
+                        class="scale-[1.15] xl:translate-x-8"
+                        alt="image"
+                    />
+                </div>
+            </div>
+            <!-- ---- Hero Section End ----- -->
+
+            <!-- ------ Who We Are Start -------- -->
+            <div id="who-we-are" class="pt-[78px] pb-[62px] sm:pt-[145px] lg:pt-0 lg:pb-[81px]">
+                <div class="container">
+                    <h2 class="text-center mb-8">Who we are</h2>
+
+                    <div class="hidden sm:block lg:grid lg:grid-cols-4 lg:gap-x-5 lg:gap-y-7">
+                        <img
+                            src="./assets/images/who-we-are.png"
+                            class="w-full rounded-[15px] lg:col-span-3 lg:row-span-2"
+                            alt="image"
+                        />
+                        <img
+                            src="./assets/images/who-we-are-2.png"
+                            class="w-full rounded-[15px] hidden lg:block"
+                            alt="image"
+                        />
+                        <img
+                            src="./assets/images/who-we-are-3.png"
+                            class="w-full rounded-[15px] hidden lg:block"
+                            alt="image"
+                        />
+                    </div>
+
+                    <!-- Slider Container -->
+                    <div class="sm:hidden">
+                        <div class="owl-carousel owl-theme" id="who-we-are-slider">
+                            <div class="mb-4">
+                                <img
+                                    src="./assets/images/who-we-are-slide-1.png"
+                                    class="w-full rounded-[15px]"
+                                    alt="image"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <img
+                                    src="./assets/images/who-we-are-slide-2.png"
+                                    class="w-full rounded-[15px]"
+                                    alt="image"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <img
+                                    src="./assets/images/who-we-are-slide-3.png"
+                                    class="w-full rounded-[15px]"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="max-w-[773px] mx-auto text-center text-sm leading-[1.6] mt-6 sm:mt-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec vehicula
+                        purus. Ut blandit sit amet augue sed tristique. Nunc sagittis libero nec
+                        lorem dictum, non commodo lectus pellentesque. Ut eleifend nulla id justo
+                        mattis rutrum. Donec nisi mi, porttitor eget arcu vitae, malesuada
+                        vestibulum tortor.
+                    </p>
+                </div>
+            </div>
+            <!-- ------- Who We Are End ------- -->
+        </header>
+        <!-- ============= Header End ==================== -->
+
+        <main>
+            <!-- ============= Services Start ================== -->
+            <section id="services" class="pb-[71px] sm:pb-11 lg:pb-10">
+                <div class="relative container lg:max-w-[1226px]">
+                    <h2 class="relative text-center z-[2]">Services</h2>
+                    <p
+                        class="relative max-w-[1029px] mx-auto text-center text-sm leading-[1.6] my-8 z-[2] lg:mt-6 lg:mb-7"
+                    >
+                        We understand that each business is unique, and we take a tailored approach
+                        to every project. Whether you need help with a NetSuite implementation,
+                        customization, or integration with other systems, we have the expertise to
+                        deliver the results you need.
+                    </p>
+                    <div
+                        class="relative grid grid-cols-1 gap-y-8 sm:grid-cols-2 z-[2] sm:gap-x-8 sm:gap-y-10 sm:items-start lg:grid-cols-3 lg:items-stretch lg:gap-[33px]"
+                    >
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-blue rounded-[15px] pt-8 pb-[25px] px-[26px] sm:h-[340px] lg:h-[300px]"
+                        >
+                            <h4 class="mb-[18px] sm:mb-5">
+                                IT Staff <br />
+                                Augmentation
+                            </h4>
+                            <p class="text-sm leading-normal">
+                                We understand that each business is unique, and we take a tailored
+                                approach to every project. Whether you need help with a NetSuite
+                                implementation, customization, or integration with other systems, we
+                                have the expertise to deliver the results you need.
+                            </p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="border border-stroke rounded-[15px] pt-8 pb-[46px] pl-[26px] pr-[35px] sm:h-[258px] lg:h-[300px]"
+                        >
+                            <h4 class="mb-[18px] sm:mb-5">
+                                NetSuite <br />
+                                Implementation
+                            </h4>
+                            <p class="text-sm leading-normal text-gray-500">
+                                With an effective team of experienced NetSuite experts, we make
+                                NetSuite implementation simple and cost-effective for our clients.
+                            </p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="border border-stroke rounded-[15px] pt-8 pb-[46px] pl-[26px] pr-[35px] sm:h-[258px] lg:h-[300px]"
+                        >
+                            <h4 class="mb-[18px] sm:mb-5">
+                                NetSuite <br />
+                                Integration
+                            </h4>
+                            <p class="text-sm leading-normal text-gray-500">
+                                Integrate NetSuite with other systems and platforms and leverage the
+                                benefits of a completely connected business environment.
+                            </p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div
+                            class="border border-stroke rounded-[15px] pt-8 pb-9 pl-[26px] pr-[35px] sm:h-[278px] sm:-translate-y-[82px] lg:h-[300px] lg:translate-y-0"
+                        >
+                            <h4 class="mb-[18px] max-w-[200px] sm:mb-5">
+                                NetSuite <br />
+                                NetSuite Training and Support
+                            </h4>
+                            <p class="text-sm leading-normal text-gray-500">
+                                Integrate NetSuite with other systems and platforms and leverage the
+                                benefits of a completely connected business environment.
+                            </p>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div
+                            class="border border-stroke rounded-[15px] pt-8 pb-8 pl-[26px] pr-[35px] sm:h-[264px] sm:-mt-5 lg:h-[300px] lg:mt-0"
+                        >
+                            <h4 class="mb-[18px] sm:mb-5">
+                                Custom Software <br />
+                                Development
+                            </h4>
+                            <p class="text-sm leading-normal text-gray-500">
+                                Cover specific business needs when there are no ready-made
+                                solutions. Our team of professionals have experience with in other
+                                technologies as well.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Blue Circle -->
+                    <div
+                        class="absolute top-[96px] left-0 hidden w-[529px] h-[533px] rounded-full bg-blue blur-[175px] opacity-[0.3] lg:block xl:-left-[100px]"
+                    ></div>
+                    <!-- Red Circle -->
+                    <div
+                        class="absolute top-[110px] left-[280px] hidden w-[290px] h-[292px] rounded-full bg-red blur-[175px] opacity-[0.3] lg:block"
+                    ></div>
+                </div>
+            </section>
+            <!-- ============= Services End ==================== -->
+
+            <!-- ============= Suit Commerce Start ================== -->
+            <section
+                id="suit-commerce"
+                class="relative bg-orange-100 pt-[63px] pb-[84px] z-[2] sm:pt-20 sm:pb-0 md:bg-transparent md:pt-0"
+            >
+                <div class="container">
+                    <div
+                        class="md:bg-orange-100 md:rounded-[15px] md:py-12 md:px-8 lg:py-14 lg:px-10 xl:pt-[84px] xl:px-20 xl:pb-24"
+                    >
+                        <h2 class="text-center text-dark-font break-words tracking-tight">
+                            Enable & Customize SuiteCommerce For Your Needs
+                        </h2>
+                        <p class="text-sm leading-[1.6] text-center text-gray-font my-8">
+                            We specialize in building SuiteCommerce Advanced web stores that deliver
+                            rich and engaging shopping experiences. So whether you want to update
+                            the look and feel of your current eCommerce store, or implement your own
+                            webstore design in SuiteCommerce Advanced, we can help you do so by
+                            working with you to plan, design and create a solution that matches your
+                            specific requirements.
+                        </p>
+                        <p class="text-sm leading-[1.6] text-center text-gray-font mb-10 sm:mb-14">
+                            Our job doesn’t just end with the launch of your new SuiteCommerce web
+                            store though. Our team of NetSuite developers and designers will work
+                            with you to provide on-going assistance post-launch, so you can grow and
+                            maintain your SuiteCommerce presence.
+                        </p>
+                        <div
+                            class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-flow-dense sm:gap-x-10 sm:gap-y-8 sm:items-start lg:grid-cols-3 lg:gap-7 lg:items-stretch xl:gap-[34px]"
+                        >
+                            <!-- Card 1 -->
+                            <div
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-11 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] text-black-font sm:mb-6 lg:w-[100px] lg:mb-4">
+                                    Webstore design
+                                </h4>
+                                <p class="text-sm text-gray-font leading-normal">
+                                    Whether you are looking for a design revamp of your current
+                                    SuiteCommerce webstore, or want a custom design storefront, our
+                                    experts can help all the way.
+                                </p>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="bg-black border border-orange-300 rounded-[15px] pt-8 pb-[46px] pl-[26px] pr-[35px] sm:pb-12 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] sm:mb-6 lg:mb-11">Customizations</h4>
+                                <p class="text-sm leading-normal text-gray-500">
+                                    We specialize in developing and delivering innovative
+                                    SuiteCommerce Advanced customizations that extend your webstore
+                                    well beyond the SuiteCommerce Advanced platform’s limits.
+                                </p>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="bg-blue border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:-translate-y-[14%] sm:pb-10 sm:pr-11 lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] sm:mb-6 lg:mb-11">Integration</h4>
+                                <p class="text-sm leading-normal">
+                                    Integrate your webstore with other systems and third-party
+                                    services.
+                                </p>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-11 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] text-black-font sm:mb-6 lg:mb-11">
+                                    SEO Optimization
+                                </h4>
+                                <p class="text-sm text-gray-font leading-normal">
+                                    Optimize your e-commerce website for search engines, including
+                                    keyword research, on-page optimization, and link building.
+                                </p>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-11 sm:pb-7 sm:-translate-y-[36%] lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] text-black-font sm:mb-6 lg:mb-11">
+                                    Performance tuning
+                                </h4>
+                                <p class="text-sm text-gray-font leading-normal">
+                                    Improve page load times, reduce bounce rates, and increase
+                                    conversion rates.
+                                </p>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-9 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4
+                                    class="mb-[18px] text-black-font sm:mb-6 lg:flex lg:flex-col lg:mb-4"
+                                >
+                                    <span>SCA </span>
+                                    <span>version upgrade</span>
+                                </h4>
+                                <p class="text-sm text-gray-font leading-normal">
+                                    Upgrade your SuiteCommerce Advanced webstore to the latest
+                                    version, ensuring that the platform remains up-to-date with the
+                                    latest features and functionality.
+                                </p>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-9 sm:-translate-y-[50%] lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                            >
+                                <h4 class="mb-[18px] text-black-font sm:mb-6 lg:mb-11">
+                                    B2B eCommerce
+                                </h4>
+                                <p class="text-sm text-gray-font leading-normal">
+                                    Add powerful features to your B2B website with ease with the
+                                    help of our development experts. We help you create
+                                    unforgettable experiences for your B2B customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============= Suit Commerce End ==================== -->
+
+            <!-- ============= Tools Start ==================== -->
+            <section id="tools" class="pt-[66px] pb-[60px] sm:pt-[92px] sm:pb-[76px] lg:py-[92px]">
+                <div class="relative container lg:max-w-[1232px]">
+                    <h2 class="relative text-center w-[180px] mx-auto sm:w-auto z-[2]">
+                        Tools we Use
+                    </h2>
+                    <!-- Slider -->
+                    <div class="owl-carousel owl-theme mt-[37px] z-[2]" id="tools-slider">
+                        <!-- Card 1 -->
+                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                            <div
+                                class="flex justify-center items-center h-[110px] border-b border-gray-400"
+                            >
+                                <img src="./assets/icons/slack.svg" alt="Slack Logo" />
+                            </div>
+                            <div class="pt-8 px-[17px] pb-10">
+                                <h4 class="text-center text-dark-font-200 mb-4">Slack</h4>
+                                <p class="text-center text-sm text-gray-font-200">
+                                    Slack is our choice to manage project communications. We create
+                                    a dedicated private channel with both team members and you (the
+                                    client) to discuss everything related to your project. This
+                                    ensures your project's information is secure and communication
+                                    is efficient and transparent at all times.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                            <div
+                                class="flex justify-center items-center h-[110px] border-b border-gray-400"
+                            >
+                                <img src="./assets/icons/asana.svg" alt="Asana Logo" />
+                            </div>
+                            <div class="pt-8 px-[17px] pb-10">
+                                <h4 class="text-center text-dark-font-200 mb-4">Asana</h4>
+                                <p class="text-center text-sm text-gray-font-200">
+                                    Trello is a collaboration tool that helps you manage projects,
+                                    focus on what's important, and organize work in one place for
+                                    seamless collaboration. It tells you what's being worked on,
+                                    who's working on what, and where something is in a process. We
+                                    use Asana to stay organized and keep progress clear but also to
+                                    gather everything you will need to know about the project in a
+                                    single place.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                            <div
+                                class="flex justify-center items-center h-[110px] border-b border-gray-400"
+                            >
+                                <img src="./assets/icons/slack.svg" alt="Slack Logo" />
+                            </div>
+                            <div class="pt-8 px-[17px] pb-10">
+                                <h4 class="text-center text-dark-font-200 mb-4">Slack</h4>
+                                <p class="text-center text-sm text-gray-font-200">
+                                    Slack is our choice to manage project communications. We create
+                                    a dedicated private channel with both team members and you (the
+                                    client) to discuss everything related to your project. This
+                                    ensures your project's information is secure and communication
+                                    is efficient and transparent at all times.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purple Circle -->
+                    <div
+                        class="absolute bottom-0 right-0 hidden w-[753px] h-[759px] rounded-full bg-purple blur-[175px] opacity-[0.2] lg:block"
+                    ></div>
+
+                    <!-- Yellow Circle -->
+                    <div
+                        class="absolute -bottom-[200px] right-[210px] hidden w-[443px] h-[446px] rounded-full bg-yellow blur-[175px] opacity-[0.2] lg:block"
+                    ></div>
+                </div>
+            </section>
+            <!-- ============= Tools End ====================== -->
+
+            <!-- ============= Tech Stack Start ==================== -->
+            <section id="tech-stack" class="pb-[72px] overflow-hidden md:pb-[90px] lg:pb-[105px]">
+                <div class="relative container lg:max-w-[1232px]">
+                    <h2 class="relative text-center w-[265px] mx-auto z-[2] sm:w-auto">
+                        Our Tech Stack
+                    </h2>
+
+                    <div class="hidden lg:flex lg:flex-col space-y-[38px] mt-11">
+                        <!-- -------- Design --------- -->
+                        <div>
+                            <h3>Design</h3>
+
+                            <div class="flex space-x-[23px] mt-[27px]">
+                                <!-- Item 1 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 bg-white h-[76px] rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/figma.svg" alt="Figma Logo" />
+                                    <h5 class="text-dark-font-400 ml-[11px]">Figma</h5>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/photoshop.svg" alt="Photoshop Logo" />
+                                    <h5 class="ml-[13px]">Photoshop</h5>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img
+                                        src="./assets/icons/illustrator.svg"
+                                        alt="Illustrator Logo"
+                                    />
+                                    <h5 class="ml-[9px]">Illustrator</h5>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/inDesign.svg" alt="InDesign Logo" />
+                                    <h5 class="ml-[11px]">InDesign</h5>
+                                </div>
+
+                                <!-- Item 5 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/xd.svg" alt="Adobe Xd Logo" />
+                                    <h5 class="ml-3">Adobe Xd</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ------ Front-End -------- -->
+                        <div>
+                            <h3>Front-End</h3>
+
+                            <div class="flex space-x-[23px] mt-[27px]">
+                                <!-- Item 1 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/react.svg" alt="React.js Logo" />
+                                    <h5 class="ml-2.5">React</h5>
+                                </div>
+                                <!-- Item 2 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/angular.svg" alt="Angular Logo" />
+                                    <h5 class="ml-[3px]">Angular</h5>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img
+                                        src="./assets/icons/backbone.js.svg"
+                                        alt="Backbone.js Logo"
+                                    />
+                                    <h5 class="-translate-x-2">Backbone.js</h5>
+                                </div>
+
+                                <div class="w-1/5"></div>
+                                <div class="w-1/5"></div>
+                            </div>
+                        </div>
+
+                        <!-- ------ Back-End -------- -->
+                        <div>
+                            <h3>Back-End</h3>
+
+                            <div class="flex space-x-[23px] mt-[27px]">
+                                <!-- Item 1 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/node.svg" alt="Node.js Logo" />
+                                    <h5 class="ml-[9px]">Node.js</h5>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/c-sharp.svg" alt="C# Logo" />
+                                    <h5 class="-translate-x-1">C#</h5>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/java.svg" alt="Java Logo" />
+                                    <h5 class="ml-[5px]">Java</h5>
+                                </div>
+
+                                <div class="w-1/5"></div>
+                                <div class="w-1/5"></div>
+                            </div>
+                        </div>
+
+                        <!-- ------- Platforms ------- -->
+                        <div>
+                            <h3>Platform & Infrastructure</h3>
+                            <div class="flex space-x-[23px] mt-[27px]">
+                                <!-- Item 1 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/netsuite.svg" alt="NetSuite Logo" />
+                                    <h5 class="ml-[6px]">NetSuite</h5>
+                                </div>
+                                <!-- Item 2 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/aws.svg" alt="AWS Logo" />
+                                    <h5 class="ml-[11px]">AWS</h5>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/gcp.svg" alt="GCP Logo" />
+                                    <h5 class="-translate-x-3">GCP</h5>
+                                </div>
+                                <!-- Item 4 -->
+                                <div
+                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
+                                >
+                                    <img src="./assets/icons/azure.svg" alt="Azure Logo" />
+                                    <h5 class="ml-1">Azure</h5>
+                                </div>
+
+                                <div class="w-1/5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:hidden">
+                        <!-- ----- Slider Container ------ -->
+                        <div
+                            class="relative mt-[46px] owl-carousel owl-theme z-[2]"
+                            id="tech-stack-slider"
+                        >
+                            <!-- -------- Design --------- -->
+                            <div class="mb-7 sm:mb-16">
+                                <h3 class="text-center">Design</h3>
+                                <div
+                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                >
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 1 -->
+                                        <div
+                                            class="flex items-center justify-center bg-white h-[76px] rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/figma.svg" alt="Figma Logo" />
+                                            <h4 class="text-dark-font-400 ml-[14px]">Figma</h4>
+                                        </div>
+
+                                        <!-- Item 2 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/photoshop.svg"
+                                                alt="Photoshop Logo"
+                                            />
+                                            <h4 class="ml-[15px]">Photoshop</h4>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 3 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/illustrator.svg"
+                                                alt="Illustrator Logo"
+                                            />
+                                            <h4 class="ml-[11px]">Illustrator</h4>
+                                        </div>
+
+                                        <!-- Item 4 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/inDesign.svg"
+                                                alt="InDesign Logo"
+                                            />
+                                            <h4 class="ml-[11px]">InDesign</h4>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 5 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/xd.svg" alt="Adobe Xd Logo" />
+                                            <h4 class="ml-[14px]">Adobe Xd</h4>
+                                        </div>
+                                        <div class="sm:w-1/2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ------ Front-End -------- -->
+                            <div class="mb-7 sm:mb-16">
+                                <h3 class="text-center">Front-End</h3>
+                                <div
+                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                >
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 1 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/react.svg"
+                                                alt="React.js Logo"
+                                            />
+                                            <h4 class="ml-[14px]">React</h4>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/angular.svg"
+                                                alt="Angular Logo"
+                                            />
+                                            <h4 class="ml-[14px]">Angular</h4>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 3 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/backbone.js.svg"
+                                                alt="Backbone.js Logo"
+                                            />
+                                            <h4 class="">Backbone.js</h4>
+                                        </div>
+                                        <div class="sm:w-1/2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ------ Back-End -------- -->
+                            <div class="mb-7 sm:mb-16">
+                                <h3 class="text-center">Back-End</h3>
+                                <div
+                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                >
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 1 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/node.svg" alt="Node.js Logo" />
+                                            <h4 class="ml-[14px]">Node.js</h4>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/c-sharp.svg" alt="C# Logo" />
+                                            <h4 class="ml-[14px]">C#</h4>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 3 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/java.svg" alt="Java Logo" />
+                                            <h4 class="ml-[14px]">Java</h4>
+                                        </div>
+                                        <div class="sm:w-1/2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ------- Platforms ------- -->
+                            <div class="mb-7 sm:mb-16">
+                                <h3 class="text-center">Platform & Infrastructure</h3>
+                                <div
+                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                >
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 1 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img
+                                                src="./assets/icons/netsuite.svg"
+                                                alt="NetSuite Logo"
+                                            />
+                                            <h4 class="ml-[14px]">NetSuite</h4>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/aws.svg" alt="AWS Logo" />
+                                            <h4 class="ml-[14px]">AWS</h4>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
+                                    >
+                                        <!-- Item 3 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/gcp.svg" alt="GCP Logo" />
+                                            <h4 class="-translate-x-2">GCP</h4>
+                                        </div>
+                                        <!-- Item 4 -->
+                                        <div
+                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
+                                        >
+                                            <img src="./assets/icons/azure.svg" alt="Azure Logo" />
+                                            <h4 class="ml-[14px]">Azure</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blue circle -->
+                    <div
+                        class="absolute top-[76px] -left-[115px] bg-blue w-[430px] h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:hidden lg:block lg:top-auto lg:bottom-0 lg:-left-6 lg:w-[652px] lg:h-[605px]"
+                    ></div>
+                    <!-- Red circle -->
+                    <div
+                        class="absolute bottom-[46px] -right-[52px] bg-red-300 w-[327px] h-[301px] rounded-full blur-[175px] opacity-[0.3] sm:right-[152px] sm:bottom-11 lg:bottom-auto lg:top-[145px] lg:right-[235px] lg:w-[401px] lg:h-[404px] lg:opacity-[0.2]"
+                    ></div>
+                </div>
+            </section>
+            <!-- ============= Tech Stack End ====================== -->
+
+            <!-- ============= Testimonials Start ==================== -->
+            <section id="testimonials" class="relative bg-orange-100 z-[2] md:bg-transparent">
+                <div class="container">
+                    <div
+                        class="pt-[54px] pb-[76px] md:bg-orange-150 md:pt-[59px] md:pb-[75px] md:px-10 md:rounded-[15px] lg:pl-[90px] lg:pr-[60px]"
+                    >
+                        <h2 class="text-center text-dark-font mb-[34px]">Testimonials</h2>
+
+                        <!-- ------ Testimonials Slider ------ -->
+                        <div class="owl-carousel owl-theme" id="testimonials-slider">
+                            <!-- Slider Item 1 -->
+                            <div
+                                class="mb-[26px] sm:mb-8 lg:flex lg:items-center lg:space-x-8 lg:mb-10 xl:space-x-[42px]"
+                            >
+                                <div class="lg:w-[54%] xl:w-[603px]">
+                                    <picture>
+                                        <source
+                                            media="(min-width:992px)"
+                                            srcset="./assets/images/testimonial-lg.png"
+                                        />
+                                        <source
+                                            media="(min-width:640px)"
+                                            srcset="./assets/images/testimonial-sm.png"
+                                        />
+                                        <img
+                                            src="./assets/images/testimonial.png"
+                                            alt="image"
+                                            class="rounded-[15px] w-full"
+                                        />
+                                    </picture>
+                                </div>
+
+                                <div
+                                    class="flex flex-col items-center text-center mt-[27px] sm:mt-6 lg:w-[46%] lg:items-start lg:text-left lg:mt-0 xl:flex-1"
+                                >
+                                    <img
+                                        src="./assets/icons/quote.svg"
+                                        alt="icon"
+                                        class="max-w-[48px] mb-5 sm:mb-6 lg:max-w-[51px]"
+                                    />
+                                    <p class="text-gray-font md:text-sm">
+                                        Trello is a collaboration tool that helps you manage
+                                        projects, focus on what's important, and organize work in
+                                        one place for seamless collaboration. It tells you what's
+                                        being worked on, who's working on what, and where something
+                                        is in a process. We use Asana to stay organized and keep
+                                        progress clear but also to gather everything you will need
+                                        to know about the project in a single place.
+                                    </p>
+                                    <h5
+                                        class="max-w-[260px] text-center text-dark-font-300 font-medium mt-5 sm:mt-6 md:text-lg md:leading-none lg:max-w-none lg:text-left lg:mt-[23px]"
+                                    >
+                                        Edgard Kotch - Company, Co-Founder
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <!-- Slider Item 2 -->
+                            <div
+                                class="mb-[26px] sm:mb-8 lg:flex lg:items-center lg:space-x-8 lg:mb-10 xl:space-x-[42px]"
+                            >
+                                <div class="lg:w-[54%] xl:w-[603px]">
+                                    <picture>
+                                        <source
+                                            media="(min-width:992px)"
+                                            srcset="./assets/images/testimonial-lg.png"
+                                        />
+                                        <source
+                                            media="(min-width:640px)"
+                                            srcset="./assets/images/testimonial-sm.png"
+                                        />
+                                        <img
+                                            src="./assets/images/testimonial.png"
+                                            alt="image"
+                                            class="rounded-[15px] w-full"
+                                        />
+                                    </picture>
+                                </div>
+
+                                <div
+                                    class="flex flex-col items-center text-center mt-[27px] sm:mt-6 lg:w-[46%] lg:items-start lg:text-left lg:mt-0 xl:flex-1"
+                                >
+                                    <img
+                                        src="./assets/icons/quote.svg"
+                                        alt="icon"
+                                        class="max-w-[48px] mb-5 sm:mb-6 lg:max-w-[51px]"
+                                    />
+                                    <p class="text-gray-font md:text-sm">
+                                        Trello is a collaboration tool that helps you manage
+                                        projects, focus on what's important, and organize work in
+                                        one place for seamless collaboration. It tells you what's
+                                        being worked on, who's working on what, and where something
+                                        is in a process. We use Asana to stay organized and keep
+                                        progress clear but also to gather everything you will need
+                                        to know about the project in a single place.
+                                    </p>
+                                    <h5
+                                        class="max-w-[260px] text-center text-dark-font-300 font-medium mt-5 sm:mt-6 md:text-lg md:leading-none lg:max-w-none lg:text-left lg:mt-[23px]"
+                                    >
+                                        Edgard Kotch - Company, Co-Founder
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <!-- Slider Item 3 -->
+                            <div
+                                class="mb-[26px] sm:mb-8 lg:flex lg:items-center lg:space-x-8 lg:mb-10 xl:space-x-[42px]"
+                            >
+                                <div class="lg:w-[54%] xl:w-[603px]">
+                                    <picture>
+                                        <source
+                                            media="(min-width:992px)"
+                                            srcset="./assets/images/testimonial-lg.png"
+                                        />
+                                        <source
+                                            media="(min-width:640px)"
+                                            srcset="./assets/images/testimonial-sm.png"
+                                        />
+                                        <img
+                                            src="./assets/images/testimonial.png"
+                                            alt="image"
+                                            class="rounded-[15px] w-full"
+                                        />
+                                    </picture>
+                                </div>
+
+                                <div
+                                    class="flex flex-col items-center text-center mt-[27px] sm:mt-6 lg:w-[46%] lg:items-start lg:text-left lg:mt-0 xl:flex-1"
+                                >
+                                    <img
+                                        src="./assets/icons/quote.svg"
+                                        alt="icon"
+                                        class="max-w-[48px] mb-5 sm:mb-6 lg:max-w-[51px]"
+                                    />
+                                    <p class="text-gray-font md:text-sm">
+                                        Trello is a collaboration tool that helps you manage
+                                        projects, focus on what's important, and organize work in
+                                        one place for seamless collaboration. It tells you what's
+                                        being worked on, who's working on what, and where something
+                                        is in a process. We use Asana to stay organized and keep
+                                        progress clear but also to gather everything you will need
+                                        to know about the project in a single place.
+                                    </p>
+                                    <h5
+                                        class="max-w-[260px] text-center text-dark-font-300 font-medium mt-5 sm:mt-6 md:text-lg md:leading-none lg:max-w-none lg:text-left lg:mt-[23px]"
+                                    >
+                                        Edgard Kotch - Company, Co-Founder
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============= Testimonials End ====================== -->
+
+            <!-- ============= Contact Start ====================== -->
+            <section
+                id="contact"
+                class="pt-[77px] pb-[54px] sm:pb-[90px] md:pb-[54px] overflow-hidden"
+            >
+                <div class="relative container lg:max-w-[1232px]">
+                    <div class="relative w-full z-[2]">
+                        <h2 class="text-center">Let’s talk</h2>
+                        <form class="w-full mt-[62px]">
+                            <div
+                                class="flex flex-col md:flex-row md:space-x-10 md:mb-[57px] lg:space-x-[103px]"
+                            >
+                                <div
+                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                >
+                                    <label
+                                        for="name"
+                                        class="font-montreal text-xl font-bold leading-[1]"
+                                        >Name</label
+                                    >
+                                    <input type="text" id="name" class="form-control" />
+                                </div>
+
+                                <div
+                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                >
+                                    <label
+                                        for="email"
+                                        class="font-montreal text-xl font-bold leading-[1]"
+                                        >Email</label
+                                    >
+                                    <input type="email" id="email" class="form-control" />
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col md:flex-row md:space-x-10 md:mb-[57px] lg:space-x-[103px]"
+                            >
+                                <div
+                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                >
+                                    <label
+                                        for="phone"
+                                        class="font-montreal text-xl font-bold leading-[1]"
+                                        >Phone</label
+                                    >
+                                    <input type="text" id="phone" class="form-control" />
+                                </div>
+
+                                <div
+                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                >
+                                    <label
+                                        for="about-us"
+                                        class="font-montreal text-xl font-bold leading-[1]"
+                                        >How did you hear about us?</label
+                                    >
+                                    <input type="text" id="about-us" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col border-b-[9px] border-gray-stroke mb-[42px]">
+                                <label
+                                    for="description"
+                                    class="font-montreal text-xl font-bold leading-[1]"
+                                    >Project Description</label
+                                >
+                                <textarea
+                                    name="description"
+                                    id="description"
+                                    class="form-control h-[158px] resize-y md:h-[58px]"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="group btn-primary md:max-w-[188px]">
+                                <span
+                                    class="transition duration-200 out-expo group-hover:-translate-x-[200%]"
+                                    >Submit</span
+                                >
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    class="transition duration-200 in-expo group-hover:-translate-x-[300%] md:max-w-[16px]"
+                                    alt="icon"
+                                />
+                            </button>
+
+                            <p class="text-center mt-[23px] md:text-left md:mt-5">
+                                We will respond to you within 24 hours.<br />
+                                We’ll sign an NDA if requested.
+                            </p>
+                        </form>
+                    </div>
+                    <div
+                        class="absolute -left-[120px] -top-[60px] hidden bg-blue w-[430px] h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:block md:w-[444px] md:h-[447px] lg:left-[147px] lg:-top-[223px]"
+                    ></div>
+                </div>
+            </section>
+            <!-- ============= Contact End ====================== -->
+        </main>
+
+        <!-- ============= Footer Start ====================== -->
+        <footer class="py-[50px] sm:pb-[50px] sm:pt-3 md:pb-8">
+            <div class="container lg:max-w-[1232px]">
+                <!-- ----- Footer Logo ---- -->
+                <a href="#" class="flex justify-center md:justify-start">
+                    <picture>
+                        <source media="(min-width:640px)" srcset="./assets/icons/Logo.svg" />
+                        <img
+                            src="./assets/icons/Logo-sm.svg"
+                            class="sm:w-[162px] md:w-[251px] md:translate-x-[-14px]"
+                            alt="Logo"
+                        />
+                    </picture>
+                </a>
+
+                <!-- ----- Footer Address & E-mail ---- -->
+                <div
+                    class="flex flex-col mt-8 md:flex-row md:items-center justify-between md:space-x-4 md:mt-5 md:pb-[50px]"
+                >
+                    <!-- Footer Address -->
+                    <div
+                        class="flex flex-col space-y-[13px] sm:flex-row sm:flex-wrap sm:space-y-0 md:flex-col md:w-[366px] md:space-y-[10px]"
+                    >
+                        <div class="sm:w-1/2 sm:pr-[11px] sm:pb-5 md:w-full md:p-0">
+                            <a
+                                href="#"
+                                class="flex items-center justify-between bg-dark text-xl font-medium font-montreal text-white leading-[1.1] rounded-[5px] pl-[22px] pr-4 py-[10px] md:py-3"
+                            >
+                                <span>Montana</span>
+                                <img src="./assets/icons/pin.svg" class="md:w-[26px]" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="sm:w-1/2 sm:pl-[11px] sm:pb-5 md:w-full md:p-0">
+                            <a
+                                href="#"
+                                class="flex items-center justify-between bg-dark text-xl font-medium font-montreal text-white leading-[1.1] rounded-[5px] pl-[22px] pr-4 py-[10px] md:py-3"
+                            >
+                                <span>Oregon</span>
+                                <img src="./assets/icons/pin.svg" class="md:w-[26px]" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="sm:w-1/2 sm:pr-[11px] sm:pb-[6px] md:w-full md:p-0">
+                            <a
+                                href="#"
+                                class="flex items-center justify-between bg-dark text-xl font-medium font-montreal text-white leading-[1.1] rounded-[5px] pl-[22px] pr-4 py-[10px] md:py-3"
+                            >
+                                <span>Montevideo</span>
+                                <img src="./assets/icons/pin.svg" class="md:w-[26px]" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer E-mail -->
+                    <div class="pt-12 pb-10 sm:pb-11 md:flex-1 md:max-w-[476px] md:p-0">
+                        <h4 class="text-center md:text-left">
+                            Get the latest updates from Hack Project
+                        </h4>
+                        <form
+                            class="w-full mt-4 mb-[25px] sm:mt-8 sm:mb-[70px] md:mt-[22px] md:mb-5"
+                        >
+                            <div class="relative w-full">
+                                <input
+                                    type="email"
+                                    placeholder="Your email"
+                                    class="w-full bg-dark text-[15px] leading-[1.1] font-medium text-white py-[17px] pl-3 pr-12 rounded-[5px] placeholder:text-white focus:outline-none md:py-[18px]"
+                                />
+                                <button type="submit" class="absolute top-[18px] right-[14px]">
+                                    <img src="./assets/icons/arrow-right-2.svg" alt="icon" />
+                                </button>
+                            </div>
+                        </form>
+                        <p
+                            class="text-center text-gray-font-50 leading-[1.4] font-medium sm: mb-7 md:text-[11px] md:max-w-[369px] md:text-left md:mb-0"
+                        >
+                            By submitting this form, you agree to receive communications from
+                            Gorilla Logic. You may unsubscribe from these communications at any
+                            time. Click here for our full privacy policy.
+                        </p>
+                    </div>
+                </div>
+                <!-- ---- Footer Copyright ---- -->
+                <div
+                    class="flex flex-col-reverse items-center border-t border-dark-stroke pt-[25px] md:flex-row md:justify-between md:pt-5"
+                >
+                    <p
+                        class="text-[15px] leading-[1.1] font-medium font-montreal text-gray-font-100 md:text-[11px]"
+                    >
+                        Copyright &copy; <span id="full-year"></span> Hack Project LLC
+                    </p>
+                    <div class="flex items-center space-x-4 mb-6 md:space-x-3 md:mb-0">
+                        <a href="#" class="md:w-5">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram icon" />
+                        </a>
+                        <a href="#" class="md:w-5">
+                            <img src="./assets/icons/linkedin.svg" alt="Linkedin icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ============= Footer End ====================== -->
+
+        <!-- ============= Javascript ==================== -->
+        <script src="./js/jquery.js"></script>
+        <script src="./vendor/owl-carousel/owl.carousel.min.js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
