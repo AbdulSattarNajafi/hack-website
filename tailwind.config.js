@@ -4,8 +4,7 @@ module.exports = {
     theme: {
         fontFamily: {
             opensans: ['Open Sans', 'sans-serif'],
-            montreal: ['sans-serif', 'sans-serif'],
-            body: ['Open Sans', 'sans-serif'],
+            montreal: ['Neue Montreal', 'sans-serif'],
         },
         container: {
             center: true,

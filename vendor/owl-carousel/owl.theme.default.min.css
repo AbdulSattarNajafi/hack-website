@@ -8,23 +8,35 @@
     text-align: center;
     -webkit-tap-highlight-color: transparent;
 }
-.owl-theme .owl-nav {
-    margin-top: 10px;
-}
+
 .owl-theme .owl-nav [class*='owl-'] {
-    color: #fff;
-    font-size: 14px;
-    margin: 5px;
-    padding: 4px 7px;
-    background: #d6d6d6;
-    display: inline-block;
+    position: absolute;
+    top: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #605d68;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    border-radius: 3px;
+}
+@media (min-width: 1560.98px) {
+    .owl-theme .owl-nav [class*='owl-'] {
+        display: flex;
+    }
 }
 .owl-theme .owl-nav [class*='owl-']:hover {
-    background: #869791;
+    background: #605d68;
     color: #fff;
     text-decoration: none;
+}
+.owl-theme .owl-nav .owl-prev {
+    left: -195px;
+}
+.owl-theme .owl-nav .owl-next {
+    right: -165px;
 }
 .owl-theme .owl-nav .disabled {
     opacity: 0.5;
@@ -35,15 +47,15 @@
 }
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 12px;
+    min-height: 12px;
     zoom: 1;
 }
 .owl-theme .owl-dots .owl-dot span {
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 12px;
+    min-height: 12px;
     margin: 5px 7px;
-    background: #d6d6d6;
+    background: #fff;
     display: block;
     -webkit-backface-visibility: visible;
     transition: opacity 0.2s ease;
@@ -51,5 +63,27 @@
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791;
+    background: #2e5cfe;
+}
+
+.owl-theme .owl-dots .testimonials-dot {
+    display: inline-block;
+    min-width: 12px;
+    min-height: 12px;
+    zoom: 1;
+}
+
+.owl-theme .owl-dots .testimonials-dot span {
+    min-width: 12px;
+    min-height: 12px;
+    margin: 5px 7px;
+    background: #ae978c;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 0.2s ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .testimonials-dot.active span,
+.owl-theme .owl-dots .testimonials-dot:hover span {
+    background: #070706;
 }

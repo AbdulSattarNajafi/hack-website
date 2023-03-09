@@ -66,7 +66,7 @@
                         <img src="./assets/icons/menu-active.svg" alt="icon" />
                     </li>
                     <li class="menu-item">
-                        <a href="#contact">Let's Talk</a>
+                        <a href="#contact">Let’s talk</a>
                         <img src="./assets/icons/menu-active.svg" alt="icon" />
                     </li>
                 </ul>
@@ -88,12 +88,13 @@
                     </p>
                     <a href="#" class="group btn-primary max-w-[308px] lg:max-w-[188px]">
                         <span
-                            class="transition duration-200 out-expo group-hover:-translate-x-[200%]"
+                            class="w-[100px] transition duration-200 out-expo group-hover:-translate-x-[200%]"
                             >Get in touch</span
                         >
+
                         <img
                             src="./assets/icons/arrow-right.svg"
-                            class="transition duration-200 in-expo group-hover:-translate-x-[300%] md:max-w-[16px]"
+                            class="transition duration-200 in-expo group-hover:-translate-x-[112px] md:max-w-[16px] lg:group-hover:-translate-x-[56px]"
                             alt="icon"
                         />
                     </a>
@@ -409,7 +410,7 @@
                     <!-- Slider -->
                     <div class="owl-carousel owl-theme mt-[37px] z-[2]" id="tools-slider">
                         <!-- Card 1 -->
-                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                        <div class="bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0 lg:h-[458px]">
                             <div
                                 class="flex justify-center items-center h-[110px] border-b border-gray-400"
                             >
@@ -428,7 +429,7 @@
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                        <div class="bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0 lg:h-[458px]">
                             <div
                                 class="flex justify-center items-center h-[110px] border-b border-gray-400"
                             >
@@ -449,7 +450,7 @@
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="min-w-full bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0">
+                        <div class="bg-white rounded-[15px] mb-7 sm:mb-14 lg:mb-0 lg:h-[458px]">
                             <div
                                 class="flex justify-center items-center h-[110px] border-b border-gray-400"
                             >
@@ -482,7 +483,7 @@
             <!-- ============= Tools End ====================== -->
 
             <!-- ============= Tech Stack Start ==================== -->
-            <section id="tech-stack" class="pb-[72px] overflow-hidden md:pb-[90px] lg:pb-[105px]">
+            <section id="tech-stack" class="pb-[72px] md:pb-[90px] lg:pb-[105px]">
                 <div class="relative container lg:max-w-[1232px]">
                     <h2 class="relative text-center w-[265px] mx-auto z-[2] sm:w-auto">
                         Our Tech Stack
@@ -863,7 +864,7 @@
 
                     <!-- Blue circle -->
                     <div
-                        class="absolute top-[76px] -left-[115px] bg-blue w-[430px] h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:hidden lg:block lg:top-auto lg:bottom-0 lg:-left-6 lg:w-[652px] lg:h-[605px]"
+                        class="absolute top-[76px] left-0 bg-blue w-[430px] h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:hidden lg:block lg:top-auto lg:bottom-0 lg:w-[652px] lg:h-[605px] xl:-left-6"
                     ></div>
                     <!-- Red circle -->
                     <div
@@ -1109,7 +1110,7 @@
                                 >
                                 <img
                                     src="./assets/icons/arrow-right.svg"
-                                    class="transition duration-200 in-expo group-hover:-translate-x-[300%] md:max-w-[16px]"
+                                    class="transition duration-200 in-expo group-hover:mx-auto md:max-w-[16px] md:group-hover:mx-0 md:group-hover:-translate-x-[56px]"
                                     alt="icon"
                                 />
                             </button>
@@ -1134,9 +1135,9 @@
                 <!-- ----- Footer Logo ---- -->
                 <a href="#" class="flex justify-center md:justify-start">
                     <picture>
-                        <source media="(min-width:640px)" srcset="./assets/icons/Logo.svg" />
+                        <source media="(min-width:640px)" srcset="./assets/icons/logo.svg" />
                         <img
-                            src="./assets/icons/Logo-sm.svg"
+                            src="./assets/icons/logo-sm.svg"
                             class="sm:w-[162px] md:w-[251px] md:translate-x-[-14px]"
                             alt="Logo"
                         />
@@ -1228,11 +1229,12 @@
                 </div>
             </div>
         </footer>
+
         <!-- ============= Footer End ====================== -->
 
         <!-- ============= Javascript ==================== -->
         <script src="./js/jquery.js"></script>
         <script src="./vendor/owl-carousel/owl.carousel.min.js"></script>
-        <script src="./js/index.js"></script>
+        <script type="module" src="./js/index.js"></script>
     </body>
 </html>
