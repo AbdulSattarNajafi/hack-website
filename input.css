@@ -92,7 +92,11 @@
 }
 
 .form-control {
-    @apply w-full bg-transparent font-montreal text-[15px] leading-none font-medium text-white focus:outline-none py-5;
+    @apply w-full bg-dark font-montreal text-[15px] leading-none font-medium text-white focus:outline-none py-[18px] px-3 mt-2 rounded-tl-[5px] rounded-tr-[5px];
+}
+
+.tech-item {
+    @apply flex items-center justify-center w-full h-[76px] border border-stroke rounded-[5px] text-white transition duration-300 hover:bg-white hover:text-dark-font-400;
 }
 
 /* HAMBURGER MENU */
@@ -155,15 +159,17 @@
 }
 
 .menu-item {
-    @apply relative font-montreal text-[30px] leading-normal font-bold sm:text-[36px] md:text-[42px] lg:text-[50px] xl:text-[60px];
+    @apply relative font-montreal text-[24px] leading-normal font-bold sm:text-[28px] lg:text-[36px] xl:text-[42px];
 }
 
 .menu-item img {
     display: none;
     position: absolute;
-    bottom: -20px;
-    right: -16px;
+    bottom: -10px;
+    right: -10px;
     max-width: 112%;
+    height: 20px;
+    object-fit: contain;
 }
 
 .menu-item.active img {

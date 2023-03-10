@@ -16,27 +16,26 @@
     justify-content: center;
     align-items: center;
     background: #605d68;
-    width: 78px;
-    height: 78px;
+    width: 66px;
+    height: 66px;
     border-radius: 50%;
     transform: translateY(-50%);
+    transition: all 0.2s ease;
     cursor: pointer;
 }
-@media (min-width: 1560.98px) {
+@media (min-width: 1388px) {
     .owl-theme .owl-nav [class*='owl-'] {
         display: flex;
     }
 }
 .owl-theme .owl-nav [class*='owl-']:hover {
-    background: #605d68;
-    color: #fff;
-    text-decoration: none;
+    background: #53515a;
 }
 .owl-theme .owl-nav .owl-prev {
-    left: -195px;
+    left: -82px;
 }
 .owl-theme .owl-nav .owl-next {
-    right: -165px;
+    right: -82px;
 }
 .owl-theme .owl-nav .disabled {
     opacity: 0.5;

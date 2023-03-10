@@ -32,7 +32,7 @@
 
             <!-- -------- Menu Start -------- -->
             <nav
-                class="header-menu absolute left-0 top-0 w-full min-h-[400px] bg-menu-bg bg-cover py-20 z-20 lg:py-[100px]"
+                class="header-menu absolute left-0 top-0 w-full h-screen bg-menu-bg bg-cover py-20 z-20 lg:py-[100px]"
             >
                 <ul
                     class="container flex flex-col items-end space-y-2.5 pr-8 sm:pr-20 md:pr-[100px] lg:pr-[114px]"
@@ -276,7 +276,7 @@
             <!-- ============= Suit Commerce Start ================== -->
             <section
                 id="suit-commerce"
-                class="relative bg-orange-100 pt-[63px] pb-[84px] z-[2] sm:pt-20 sm:pb-0 md:bg-transparent md:pt-0"
+                class="relative bg-orange-100 pt-[63px] pb-[84px] z-[2] sm:pt-20 sm:pb-[102px] md:bg-transparent md:py-0"
             >
                 <div class="container">
                     <div
@@ -300,7 +300,7 @@
                             maintain your SuiteCommerce presence.
                         </p>
                         <div
-                            class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-flow-dense sm:gap-x-10 sm:gap-y-8 sm:items-start lg:grid-cols-3 lg:gap-7 lg:items-stretch xl:gap-[34px]"
+                            class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-flow-dense sm:gap-x-10 sm:gap-y-8 lg:grid-cols-3 lg:gap-7 lg:items-stretch xl:gap-[34px]"
                         >
                             <!-- Card 1 -->
                             <div
@@ -330,7 +330,7 @@
 
                             <!-- Card 3 -->
                             <div
-                                class="bg-blue border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:-translate-y-[14%] sm:pb-10 sm:pr-11 lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                                class="bg-blue border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pb-10 sm:pr-11 lg:h-[303px] lg:pl-7 lg:pr-10"
                             >
                                 <h4 class="mb-[18px] sm:mb-6 lg:mb-11">Integration</h4>
                                 <p class="text-sm leading-normal">
@@ -354,7 +354,7 @@
 
                             <!-- Card 5 -->
                             <div
-                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-11 sm:pb-7 sm:-translate-y-[36%] lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-11 sm:pb-7 lg:h-[303px] lg:pl-7 lg:pr-10"
                             >
                                 <h4 class="mb-[18px] text-black-font sm:mb-6 lg:mb-11">
                                     Performance tuning
@@ -384,7 +384,7 @@
 
                             <!-- Card 7 -->
                             <div
-                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-9 sm:-translate-y-[50%] lg:translate-y-0 lg:h-[303px] lg:pl-7 lg:pr-10"
+                                class="bg-orange-200 border border-orange-300 rounded-[15px] pt-8 pb-[25px] px-[26px] sm:pr-9 sm:pb-9 lg:h-[303px] lg:pl-7 lg:pr-10"
                             >
                                 <h4 class="mb-[18px] text-black-font sm:mb-6 lg:mb-11">
                                     B2B eCommerce
@@ -489,54 +489,44 @@
                         Our Tech Stack
                     </h2>
 
-                    <div class="hidden lg:flex lg:flex-col space-y-[38px] mt-11">
+                    <div class="relative hidden lg:flex lg:flex-col space-y-[38px] mt-11 z-[2]">
                         <!-- -------- Design --------- -->
                         <div>
                             <h3>Design</h3>
 
-                            <div class="flex space-x-[23px] mt-[27px]">
+                            <div class="grid grid-cols-5 gap-x-[23px] mt-[27px]">
                                 <!-- Item 1 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 bg-white h-[76px] rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/figma.svg" alt="Figma Logo" />
-                                    <h5 class="text-dark-font-400 ml-[11px]">Figma</h5>
-                                </div>
+                                    <h5 class="ml-[11px]">Figma</h5>
+                                </a>
 
                                 <!-- Item 2 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/photoshop.svg" alt="Photoshop Logo" />
                                     <h5 class="ml-[13px]">Photoshop</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 3 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img
                                         src="./assets/icons/illustrator.svg"
                                         alt="Illustrator Logo"
                                     />
                                     <h5 class="ml-[9px]">Illustrator</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 4 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/inDesign.svg" alt="InDesign Logo" />
                                     <h5 class="ml-[11px]">InDesign</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 5 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/xd.svg" alt="Adobe Xd Logo" />
                                     <h5 class="ml-3">Adobe Xd</h5>
-                                </div>
+                                </a>
                             </div>
                         </div>
 
@@ -544,35 +534,26 @@
                         <div>
                             <h3>Front-End</h3>
 
-                            <div class="flex space-x-[23px] mt-[27px]">
+                            <div class="grid grid-cols-5 gap-x-[23px] mt-[27px]">
                                 <!-- Item 1 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/react.svg" alt="React.js Logo" />
                                     <h5 class="ml-2.5">React</h5>
-                                </div>
+                                </a>
                                 <!-- Item 2 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/angular.svg" alt="Angular Logo" />
                                     <h5 class="ml-[3px]">Angular</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 3 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img
                                         src="./assets/icons/backbone.js.svg"
                                         alt="Backbone.js Logo"
                                     />
                                     <h5 class="-translate-x-2">Backbone.js</h5>
-                                </div>
-
-                                <div class="w-1/5"></div>
-                                <div class="w-1/5"></div>
+                                </a>
                             </div>
                         </div>
 
@@ -580,77 +561,58 @@
                         <div>
                             <h3>Back-End</h3>
 
-                            <div class="flex space-x-[23px] mt-[27px]">
+                            <div class="grid grid-cols-5 gap-x-[23px] mt-[27px]">
                                 <!-- Item 1 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/node.svg" alt="Node.js Logo" />
                                     <h5 class="ml-[9px]">Node.js</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 2 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/c-sharp.svg" alt="C# Logo" />
                                     <h5 class="-translate-x-1">C#</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 3 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/java.svg" alt="Java Logo" />
                                     <h5 class="ml-[5px]">Java</h5>
-                                </div>
-
-                                <div class="w-1/5"></div>
-                                <div class="w-1/5"></div>
+                                </a>
                             </div>
                         </div>
 
                         <!-- ------- Platforms ------- -->
                         <div>
                             <h3>Platform & Infrastructure</h3>
-                            <div class="flex space-x-[23px] mt-[27px]">
+                            <div class="grid grid-cols-5 gap-x-[23px] mt-[27px]">
                                 <!-- Item 1 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/netsuite.svg" alt="NetSuite Logo" />
                                     <h5 class="ml-[6px]">NetSuite</h5>
-                                </div>
+                                </a>
                                 <!-- Item 2 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/aws.svg" alt="AWS Logo" />
                                     <h5 class="ml-[11px]">AWS</h5>
-                                </div>
+                                </a>
 
                                 <!-- Item 3 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/gcp.svg" alt="GCP Logo" />
                                     <h5 class="-translate-x-3">GCP</h5>
-                                </div>
+                                </a>
                                 <!-- Item 4 -->
-                                <div
-                                    class="flex items-center justify-center w-1/5 h-[76px] border border-stroke rounded-[5px]"
-                                >
+                                <a href="#" class="tech-item">
                                     <img src="./assets/icons/azure.svg" alt="Azure Logo" />
                                     <h5 class="ml-1">Azure</h5>
-                                </div>
-
-                                <div class="w-1/5"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
+                    <!-- ----- Slider Container ------ -->
                     <div class="lg:hidden">
-                        <!-- ----- Slider Container ------ -->
                         <div
                             class="relative mt-[46px] owl-carousel owl-theme z-[2]"
                             id="tech-stack-slider"
@@ -659,69 +621,46 @@
                             <div class="mb-7 sm:mb-16">
                                 <h3 class="text-center">Design</h3>
                                 <div
-                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                    class="grid grid-cols-1 gap-y-[21px] mt-[26px] sm:grid-cols-2 sm:gap-y-[38px] sm:gap-x-8"
                                 >
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 1 -->
-                                        <div
-                                            class="flex items-center justify-center bg-white h-[76px] rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/figma.svg" alt="Figma Logo" />
-                                            <h4 class="text-dark-font-400 ml-[14px]">Figma</h4>
-                                        </div>
+                                    <!-- Item 1 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/figma.svg" alt="Figma Logo" />
+                                        <h4 class="ml-[14px]">Figma</h4>
+                                    </a>
 
-                                        <!-- Item 2 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/photoshop.svg"
-                                                alt="Photoshop Logo"
-                                            />
-                                            <h4 class="ml-[15px]">Photoshop</h4>
-                                        </div>
-                                    </div>
+                                    <!-- Item 2 -->
+                                    <a href="#" class="tech-item">
+                                        <img
+                                            src="./assets/icons/photoshop.svg"
+                                            alt="Photoshop Logo"
+                                        />
+                                        <h4 class="ml-[15px]">Photoshop</h4>
+                                    </a>
 
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 3 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/illustrator.svg"
-                                                alt="Illustrator Logo"
-                                            />
-                                            <h4 class="ml-[11px]">Illustrator</h4>
-                                        </div>
+                                    <!-- Item 3 -->
+                                    <a href="#" class="tech-item">
+                                        <img
+                                            src="./assets/icons/illustrator.svg"
+                                            alt="Illustrator Logo"
+                                        />
+                                        <h4 class="ml-[11px]">Illustrator</h4>
+                                    </a>
 
-                                        <!-- Item 4 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/inDesign.svg"
-                                                alt="InDesign Logo"
-                                            />
-                                            <h4 class="ml-[11px]">InDesign</h4>
-                                        </div>
-                                    </div>
+                                    <!-- Item 4 -->
+                                    <a href="#" class="tech-item">
+                                        <img
+                                            src="./assets/icons/inDesign.svg"
+                                            alt="InDesign Logo"
+                                        />
+                                        <h4 class="ml-[11px]">InDesign</h4>
+                                    </a>
 
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 5 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/xd.svg" alt="Adobe Xd Logo" />
-                                            <h4 class="ml-[14px]">Adobe Xd</h4>
-                                        </div>
-                                        <div class="sm:w-1/2"></div>
-                                    </div>
+                                    <!-- Item 5 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/xd.svg" alt="Adobe Xd Logo" />
+                                        <h4 class="ml-[14px]">Adobe Xd</h4>
+                                    </a>
                                 </div>
                             </div>
 
@@ -729,47 +668,27 @@
                             <div class="mb-7 sm:mb-16">
                                 <h3 class="text-center">Front-End</h3>
                                 <div
-                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                    class="grid grid-cols-1 gap-y-[21px] mt-[26px] sm:grid-cols-2 sm:gap-y-[38px] sm:gap-x-8"
                                 >
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 1 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/react.svg"
-                                                alt="React.js Logo"
-                                            />
-                                            <h4 class="ml-[14px]">React</h4>
-                                        </div>
-                                        <!-- Item 2 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/angular.svg"
-                                                alt="Angular Logo"
-                                            />
-                                            <h4 class="ml-[14px]">Angular</h4>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 3 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/backbone.js.svg"
-                                                alt="Backbone.js Logo"
-                                            />
-                                            <h4 class="">Backbone.js</h4>
-                                        </div>
-                                        <div class="sm:w-1/2"></div>
-                                    </div>
+                                    <!-- Item 1 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/react.svg" alt="React.js Logo" />
+                                        <h4 class="ml-[14px]">React</h4>
+                                    </a>
+                                    <!-- Item 2 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/angular.svg" alt="Angular Logo" />
+                                        <h4 class="ml-[14px]">Angular</h4>
+                                    </a>
+
+                                    <!-- Item 3 -->
+                                    <a href="#" class="tech-item">
+                                        <img
+                                            src="./assets/icons/backbone.js.svg"
+                                            alt="Backbone.js Logo"
+                                        />
+                                        <h4 class="">Backbone.js</h4>
+                                    </a>
                                 </div>
                             </div>
 
@@ -777,38 +696,24 @@
                             <div class="mb-7 sm:mb-16">
                                 <h3 class="text-center">Back-End</h3>
                                 <div
-                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                    class="grid grid-cols-1 gap-y-[21px] mt-[26px] sm:grid-cols-2 sm:gap-y-[38px] sm:gap-x-8"
                                 >
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 1 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/node.svg" alt="Node.js Logo" />
-                                            <h4 class="ml-[14px]">Node.js</h4>
-                                        </div>
-                                        <!-- Item 2 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/c-sharp.svg" alt="C# Logo" />
-                                            <h4 class="ml-[14px]">C#</h4>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 3 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/java.svg" alt="Java Logo" />
-                                            <h4 class="ml-[14px]">Java</h4>
-                                        </div>
-                                        <div class="sm:w-1/2"></div>
-                                    </div>
+                                    <!-- Item 1 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/node.svg" alt="Node.js Logo" />
+                                        <h4 class="ml-[14px]">Node.js</h4>
+                                    </a>
+                                    <!-- Item 2 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/c-sharp.svg" alt="C# Logo" />
+                                        <h4 class="ml-[14px]">C#</h4>
+                                    </a>
+
+                                    <!-- Item 3 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/java.svg" alt="Java Logo" />
+                                        <h4 class="ml-[14px]">Java</h4>
+                                    </a>
                                 </div>
                             </div>
 
@@ -816,47 +721,32 @@
                             <div class="mb-7 sm:mb-16">
                                 <h3 class="text-center">Platform & Infrastructure</h3>
                                 <div
-                                    class="flex flex-col space-y-[21px] mt-[26px] sm:flex-row sm:flex-wrap sm:space-y-[38px]"
+                                    class="grid grid-cols-1 gap-y-[21px] mt-[26px] sm:grid-cols-2 sm:gap-y-[38px] sm:gap-x-8"
                                 >
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 1 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img
-                                                src="./assets/icons/netsuite.svg"
-                                                alt="NetSuite Logo"
-                                            />
-                                            <h4 class="ml-[14px]">NetSuite</h4>
-                                        </div>
-                                        <!-- Item 2 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/aws.svg" alt="AWS Logo" />
-                                            <h4 class="ml-[14px]">AWS</h4>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col space-y-[21px] w-full sm:flex-row sm:space-x-8 sm:space-y-0"
-                                    >
-                                        <!-- Item 3 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/gcp.svg" alt="GCP Logo" />
-                                            <h4 class="-translate-x-2">GCP</h4>
-                                        </div>
-                                        <!-- Item 4 -->
-                                        <div
-                                            class="flex items-center justify-center h-[76px] border border-stroke rounded-[5px] sm:w-1/2"
-                                        >
-                                            <img src="./assets/icons/azure.svg" alt="Azure Logo" />
-                                            <h4 class="ml-[14px]">Azure</h4>
-                                        </div>
-                                    </div>
+                                    <!-- Item 1 -->
+                                    <a href="#" class="tech-item">
+                                        <img
+                                            src="./assets/icons/netsuite.svg"
+                                            alt="NetSuite Logo"
+                                        />
+                                        <h4 class="ml-[14px]">NetSuite</h4>
+                                    </a>
+                                    <!-- Item 2 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/aws.svg" alt="AWS Logo" />
+                                        <h4 class="ml-[14px]">AWS</h4>
+                                    </a>
+
+                                    <!-- Item 3 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/gcp.svg" alt="GCP Logo" />
+                                        <h4 class="-translate-x-2">GCP</h4>
+                                    </a>
+                                    <!-- Item 4 -->
+                                    <a href="#" class="tech-item">
+                                        <img src="./assets/icons/azure.svg" alt="Azure Logo" />
+                                        <h4 class="ml-[14px]">Azure</h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -864,11 +754,11 @@
 
                     <!-- Blue circle -->
                     <div
-                        class="absolute top-[76px] left-0 bg-blue w-[430px] h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:hidden lg:block lg:top-auto lg:bottom-0 lg:w-[652px] lg:h-[605px] xl:-left-6"
+                        class="absolute top-[76px] left-0 bg-blue max-w-[430px] w-full h-[396px] rounded-full blur-[175px] opacity-[0.3] sm:hidden lg:block lg:top-auto lg:bottom-0 lg:w-[652px] lg:h-[605px] xl:-left-6"
                     ></div>
                     <!-- Red circle -->
                     <div
-                        class="absolute bottom-[46px] -right-[52px] bg-red-300 w-[327px] h-[301px] rounded-full blur-[175px] opacity-[0.3] sm:right-[152px] sm:bottom-11 lg:bottom-auto lg:top-[145px] lg:right-[235px] lg:w-[401px] lg:h-[404px] lg:opacity-[0.2]"
+                        class="absolute bottom-[46px] right-0 bg-red-300 w-[327px] h-[301px] rounded-full blur-[175px] opacity-[0.3] sm:bottom-11 lg:bottom-auto lg:top-[145px] lg:right-[235px] lg:w-[401px] lg:h-[404px] lg:opacity-[0.2]"
                     ></div>
                 </div>
             </section>
@@ -878,7 +768,7 @@
             <section id="testimonials" class="relative bg-orange-100 z-[2] md:bg-transparent">
                 <div class="container">
                     <div
-                        class="pt-[54px] pb-[76px] md:bg-orange-150 md:pt-[59px] md:pb-[75px] md:px-10 md:rounded-[15px] lg:pl-[90px] lg:pr-[60px]"
+                        class="pt-[54px] pb-[76px] md:bg-orange-150 md:pt-[59px] md:pb-[75px] md:px-10 md:rounded-[15px] xl:px-[90px]"
                     >
                         <h2 class="text-center text-dark-font mb-[34px]">Testimonials</h2>
 
@@ -1043,7 +933,7 @@
                                 class="flex flex-col md:flex-row md:space-x-10 md:mb-[57px] lg:space-x-[103px]"
                             >
                                 <div
-                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                    class="border-b-[3px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
                                 >
                                     <label
                                         for="name"
@@ -1054,7 +944,7 @@
                                 </div>
 
                                 <div
-                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                    class="border-b-[3px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
                                 >
                                     <label
                                         for="email"
@@ -1068,7 +958,7 @@
                                 class="flex flex-col md:flex-row md:space-x-10 md:mb-[57px] lg:space-x-[103px]"
                             >
                                 <div
-                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                    class="border-b-[3px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
                                 >
                                     <label
                                         for="phone"
@@ -1079,7 +969,7 @@
                                 </div>
 
                                 <div
-                                    class="border-b-[9px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
+                                    class="border-b-[3px] border-gray-stroke mb-11 md:w-1/2 md:mb-0"
                                 >
                                     <label
                                         for="about-us"
@@ -1090,7 +980,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-col border-b-[9px] border-gray-stroke mb-[42px]">
+                            <div class="flex flex-col border-b-[3px] border-gray-stroke mb-[42px]">
                                 <label
                                     for="description"
                                     class="font-montreal text-xl font-bold leading-[1]"
@@ -1133,16 +1023,18 @@
         <footer class="py-[50px] sm:pb-[50px] sm:pt-3 md:pb-8">
             <div class="container lg:max-w-[1232px]">
                 <!-- ----- Footer Logo ---- -->
-                <a href="#" class="flex justify-center md:justify-start">
-                    <picture>
-                        <source media="(min-width:640px)" srcset="./assets/icons/logo.svg" />
-                        <img
-                            src="./assets/icons/logo-sm.svg"
-                            class="sm:w-[162px] md:w-[251px] md:translate-x-[-14px]"
-                            alt="Logo"
-                        />
-                    </picture>
-                </a>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:640px)" srcset="./assets/icons/logo.svg" />
+                            <img
+                                src="./assets/icons/logo-sm.svg"
+                                class="sm:w-[162px] md:w-[251px] md:translate-x-[-14px]"
+                                alt="Logo"
+                            />
+                        </picture>
+                    </a>
+                </div>
 
                 <!-- ----- Footer Address & E-mail ---- -->
                 <div
@@ -1235,6 +1127,6 @@
         <!-- ============= Javascript ==================== -->
         <script src="./js/jquery.js"></script>
         <script src="./vendor/owl-carousel/owl.carousel.min.js"></script>
-        <script type="module" src="./js/index.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>

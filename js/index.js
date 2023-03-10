@@ -14,18 +14,14 @@ menuItems.forEach((item) => {
     });
 });
 
-window.addEventListener('scroll', () => {
-    if (menu.classList.contains('open') && window.scrollY > menu.clientHeight) {
-        hideMenu();
-    }
-});
-
 function showHideMenu() {
+    document.body.classList.toggle('overflow-hidden');
     menu.classList.toggle('open');
     menuBtn.classList.toggle('open');
 }
 
 function hideMenu() {
+    document.body.classList.remove('overflow-hidden');
     menu.classList.remove('open');
     menuBtn.classList.remove('open');
 }
@@ -42,7 +38,6 @@ $(document).ready(function () {
         lazyLoad: true,
         autoplayTimeout: 7500,
         autoplayHoverPause: true,
-        // slideTransition: 'fade',
     });
 });
 
@@ -90,7 +85,6 @@ $(document).ready(function () {
         lazyLoad: true,
         autoplayTimeout: 7500,
         autoplayHoverPause: true,
-        // slideTransition: 'fade',
     });
 });
 
